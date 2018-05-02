@@ -9,11 +9,10 @@ var express = require('express')
   , http = require('http')
   , path = require('path')
   , bodyPaser = require('body-parser')
-
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 3050);
+app.set('port', process.env.PORT || 3070);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
