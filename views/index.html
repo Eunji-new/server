@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "css/bootstrap.min.css" type = "text/css">
+    </head>
     <title></title>
-<meta charset="utf-8">
+<meta charset="utf-a">
+    
     <body>
-         <form method = 'POST' action  = "/logincheck">
-    ID<input type = "text"><br>
-    PW<input type = "passwd">
-    <input type = "submit" value = "login">
-    <button onclick = "location.href = './SignUp.html'" >Sign Up</button>
+         <img src="https://imgur.com/5iw4EDY.jpeg" class="img-fluid" alt="Responsive image" width = "250" height = "150">
+        
+         <form method = 'POST' action="/logincheck">
+    <div class="input-group input-group-lg">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg"><strong>ID</strong></span>
+  </div>
+  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-default">
+</div>
+  <div class="input-group input-group-lg">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg"><strong>Passwd</strong></span>
+  </div>
+  <input type="text" class="form-control" aria-label="LArge" aria-describedby="inputGroup-sizing-default">
+</div><br>
+  <button type="button" class="btn btn-primary">Login</button>&nbsp;
+  <button type="button" class="btn btn-primary" location.href = './signup'>Sign up</button>
         </form>
     </body>
 </html>
+
 
