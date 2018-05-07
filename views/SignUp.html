@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head><style></style></head>
     <title></title>
 <meta charset="utf-a">
     <body>
-        <form method = 'POST'>
-        아이디  <input type = "text"> <button>중복확인</button><br>
-        비밀번호 <input type = "passwd"><br>
-        비밀번호 재확인 <input type = "passwd"><br>
-        
-        name <input type = "text">
-        <button onclick = "history.go(-1)">확인</button>
-            <button>취소</button>
-        </form>
+        <form method = 'POST'> 
+            <p><font face="헤드라인M" size=7em>회원가입</font></p>
+            <table border="1">
+                <tbody>
+                <tr><td>아이디</td><td><input type = "text" placeholder="아이디"> <button>중복확인</button>(영문소문자/숫자, 4~16자)</td></tr>
+                <tr><td>비밀번호</td><td><input type = "passwd"  placeholder="비밀번호">(영문 대소문자/숫자 4자~16자)</td></tr>
+                <tr><td>비밀번호 재확인</td><td><input type = "passwd"  placeholder="비밀번호 재입력"></td></tr>
+                <tr><td>이름</td><td><input type = "text" placeholder="이름"></td></tr>
+                <tr><td>생년월일</td><td><input type = "text"  style="text-align: right">년<input type = "text" style="text-align: right">월<input type = "text" style="text-align: right">일</td></tr>
+                <tr><td>휴대전화번호</td><td><input type = "text" placeholder=" ' - ' 제외하고 입력"></td></tr>
+                <tr><td>이메일</td><td><input type="text">@<input type="text"></td></tr>
+                <tr><td>이메일 수신여부</td></tr>
+                </tbody>
+          </table>
+        &nbsp;<button type="button" class="btn btn-primary" onclick ="history.go(-1)" >확인</button>&nbsp;    <button  type="button" class="btn btn-primary">취소</button><br>
+          </form>
     </body>
 </html>
 
