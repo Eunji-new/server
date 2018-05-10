@@ -6,16 +6,20 @@
     <body>
         <form method = 'POST'> 
             <p><font face="헤드라인M" size=7em>회원가입</font></p>
-            <table border="1">
-                <tbody>
+            <table border="1" width="700" height="400">
+                <tbody >
                 <tr><td>아이디</td><td><input type = "text" placeholder="아이디"> <button>중복확인</button>(영문소문자/숫자, 4~16자)</td></tr>
                 <tr><td>비밀번호</td><td><input type = "passwd"  placeholder="비밀번호">(영문 대소문자/숫자 4자~16자)</td></tr>
                 <tr><td>비밀번호 재확인</td><td><input type = "passwd"  placeholder="비밀번호 재입력"></td></tr>
                 <tr><td>이름</td><td><input type = "text" placeholder="이름"></td></tr>
                 <tr><td>생년월일</td><td><input type = "text"  style="text-align: right">년<input type = "text" style="text-align: right">월<input type = "text" style="text-align: right">일</td></tr>
                 <tr><td>휴대전화번호</td><td><input type = "text" placeholder=" ' - ' 제외하고 입력"></td></tr>
-                <tr><td>이메일</td><td><input type="text">@<input type="text"></td></tr>
-                <tr><td>이메일 수신여부</td></tr>
+                <tr><td>이메일</td><td><input type="text">@<input type="text">&nbsp;<input type ="text" list="email" placeholder="직접입력">
+                    <datalist id="email">
+                        <option value="naver.com">
+                        <option value="gmail.com">
+                        <option value="seoultech.ac.kr"></datalist> </td></tr>
+                <tr><td>이메일 수신여부</td><td>&nbsp;<input type="radio" name="emailcheck" value="1">수신&nbsp;<input type="radio" name="emailcheck" value="1">거부</td></tr>
                 </tbody>
           </table>
         &nbsp;<button type="button" class="btn btn-primary" onclick ="history.go(-1)" >확인</button>&nbsp;    <button  type="button" class="btn btn-primary">취소</button><br>
