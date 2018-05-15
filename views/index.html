@@ -3,11 +3,10 @@
     <head>
         <style> 
             strong {
-	text-shadow: 0 0 5px #FFFFFF;
-	-moz-text-shadow: 0 0 5px #FFF;
-	-webkit-text-shadow: 0 0 5px #FFF;
-}
-          
+                text-shadow: 0 0 5px #FFFFFF;
+                -moz-text-shadow: 0 0 5px #FFF;
+                -webkit-text-shadow: 0 0 5px #FFF;
+                }   
         </style>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel = "stylesheet" href = "css/bootstrap.min.css" type = "text/css">
@@ -17,15 +16,17 @@
     
     <body>
         <div style=" position:absolute; left:100%; background-color:lightskyblue; margin-top: 30px; margin-left: -63.5%;   width: 350px; height: 550px; border-radius: 3%; border:20px solid lightskyblue" ><br><br><br>
+            
          <form method = 'POST' action="/logincheck" style="text-align: center" >
-             <font face="헤드라인M" size=10em><strong>LOGIN</strong></font><br><br><br></form>
+             <font face="헤드라인M" size=10em><strong>LOGIN</strong></font><br><br><br>
+            
              <font style="text-align: left">ID</font>
-         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-default" placeholder="아이디"><br>
+         <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-default" placeholder="아이디" name="id"><br>
+            
              Passwd
-        <input type="password" class="form-control" aria-label="LArge" aria-describedby="inputGroup-sizing-default" placeholder="비밀번호"><br>
-              <form method = 'POST' action="/logincheck" style="text-align: center" >
-  <button type="button" class="btn btn-primary" >Login</button>&nbsp;
-  <button type="button" class="btn btn-primary" onclick="location.href = './SignUp'">Sign up</button>
+             <input type="password" class="form-control" aria-label="LArge" aria-describedby="inputGroup-sizing-default" placeholder="비밀번호" name="pw"><br>
+  <button type="submit" class="btn btn-primary" >Login</button>&nbsp;
+  <button type="button" class="btn btn-primary" onclick="location.href = './signup'">Sign up</button>
         </form>
         </div>
     </body>
