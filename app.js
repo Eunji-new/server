@@ -66,7 +66,7 @@ app.post('/logincheck', function(req, res){
 	      
 	      if( cnt === 1 ){
 	    	//  req.session.user_id=uid;
-	         res.send( '<h1>login success</h1>');
+	         res.send( '<h1>'+uid+'님 환영합니다!</h1>');
 	      
 	      }else{
 	         res.json({result:'fail'});
