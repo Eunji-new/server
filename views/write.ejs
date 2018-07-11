@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "css/bootstrap.min.css" type = "text/css">
+    </head>
+    <script>
+    </script>
+<body>
+    <form method = 'POST' action="/writecheck">
+        
+   <header>
+             <font style ="float:right;">&emsp;| &emsp;<button type="button"class="btn btn-light" onclick="location.href= './mypage'">My Page</button>&emsp;</font>
+        <button type="button" onclick="location.href= './logout'" style="float:right;text-decoration:none;color:black;" class="btn btn-light">logout</button>
+    <h1 style="text-align:center; "><br><br>
+       <span style="color:skyblue" ><%=uid%></span>님 환영합니다<br><br></h1>
+    <hr>
+    </header>
+    <article style="float:left;width:20%; height:100%; margin:1%; border:1px solid black; padding:15px; border-radius:5%;">
+        <br>
+        <div>
+            &emsp; &emsp;<img src="img/aiujonye.jpg" style="width:85%;"><br><br>
+            이름 &emsp;<%=uname%><br>
+            
+            생일&emsp;<%=ubirth%><br>
+            <br>
+        </div>
+      
+        <div style="width:100%;background-color:lightblue; text-align:center;">
+            <br>
+           <font style="font-size:30px;">카테고리</font>
+            <hr>
+            <button type="button" class="btn btn-secondary" style="width:100%;">인기 게시글</button><br>
+            <button type="button" class="btn btn-secondary" style="width:100%;">자유 게시판</button><br>
+           <button type="button" class="btn btn-secondary" style="width:100%;">정보 게시판</button> <br>
+           <button type="button" class="btn btn-secondary" style="width:100%;">고객의 소리</button> <br>
+            
+        </div>
+    </article>
+    <section style="float:right; width:75%; margin-top:2%;margin-right:2%;">
+     
+           
+           <h1>게시글 작성</h1>
+      <br><br>
+     
+            <span >제목</span>&emsp;<input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" style="width:30%;display:inline-block;" maxlength="20" name="title" required="required">
+        
+           &emsp;<span>작성자 :</span>&emsp;<%=writer%><br><br>
+        
+        <input type="file"><br>
+        
+        <textarea cols="135%" rows="20" name="contents" style="width:100%;" required="required"></textarea><br>
+   
+        <div style="float:right">
+       <button type="button" class="btn btn-outline-dark">목록</button>
+        <button type="submit" class="btn btn-outline-dark">작성</button>
+              
+        </div>
+           
+     
+    </section>
+   <footer>
+    
+    </footer>
+    
+       </form>
+</body>
+</html>
